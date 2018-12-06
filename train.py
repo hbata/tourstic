@@ -7,6 +7,7 @@ import numpy as np
 from scipy import interp
 import matplotlib.pyplot as plt
 import os
+import click
 
 
 def load_data():
@@ -65,7 +66,7 @@ def run_training_kfold(n_splits, kernel='linear', save_clf=True):
     plt.savefig('auc_kfolds')
     plt.show()
 
-
+#this is to add as click command
 def main():
     kernel = 'linear'
     n_splits = 6
