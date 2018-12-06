@@ -66,14 +66,14 @@ def run_training_kfold(n_splits, kernel='linear', save_clf=True):
     plt.savefig('auc_kfolds')
     plt.show()
 
-#this is to add as click command
+
+# this is to add as click command
 def main():
     kernel = 'linear'
     n_splits = 6
     run_training_kfold(n_splits, kernel)
     with open('model/svm_slf.pkl', 'rb') as f:
         model = pkl.load(f)
-
 
 
 if __name__ == '__main__':
