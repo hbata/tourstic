@@ -8,7 +8,6 @@ from scipy import interp
 import matplotlib.pyplot as plt
 import os
 import click
-import argparse
 
 
 def load_data():
@@ -68,6 +67,10 @@ def run_training_kfold(n_splits, kernel='linear', save_clf=True):
     plt.show()
 
 
+<<<<<<< HEAD
+=======
+# this is to add as click command
+>>>>>>> dev1
 def main():
     kernel = 'linear'
     n_splits = 6
