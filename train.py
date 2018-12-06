@@ -8,7 +8,6 @@ from scipy import interp
 import matplotlib.pyplot as plt
 import os
 import click
-import argparse
 
 
 def load_data():
